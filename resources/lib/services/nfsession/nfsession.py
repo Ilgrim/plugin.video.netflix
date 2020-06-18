@@ -122,8 +122,8 @@ class NetflixSession(NFSessionAccess, DirectoryBuilder):
         g.LOCAL_DB.switch_active_profile(guid)
         g.CACHE_MANAGEMENT.identifier_prefix = guid
         self.update_session_data()
-        if not ignore_update_lolomo_data:
-            self.update_lolomo_data()
+        # if not ignore_update_lolomo_data:
+        #     self.update_lolomo_data()
 
     @needs_login
     def _perpetual_path_request_switch_profiles(self, paths, length_params,
